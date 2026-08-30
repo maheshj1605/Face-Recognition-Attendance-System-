@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 import tempfile
 import unittest
 
@@ -12,10 +12,8 @@ class DatabaseTestCase(unittest.TestCase):
 
         self.original_database_path = database.DATABASE_PATH
         database.DATABASE_PATH = (
-            os.path.join(
-                self.temp_directory.name,
-                "test_attendance.db"
-            )
+            Path(self.temp_directory.name)
+            / "test_attendance.db"
         )
 
         database.initialize_database()
