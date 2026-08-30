@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+
+# IDE settings
+.idea/
+.vscode/
+
+# SQLite database
+data/*.db
+
+# Face/biometric data
+faces/*
+
+# Keep the folder in Git
+!faces/.gitkeep
+
+# Keep data folder in Git
+!data/.gitkeep
+
+# PyInstaller
+build/
+dist/
+*.spec
+*.exe
+
+# Operating system files
+.DS_Store
+Thumbs.db
